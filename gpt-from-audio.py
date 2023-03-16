@@ -61,7 +61,7 @@ def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
 
     # Load your API key from an environment variable or secret management service
-    openai.api_key = "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"
+    openai.api_key = "{KEYPLACEHOLDER}"
 
     record_audio("output.wav");
     

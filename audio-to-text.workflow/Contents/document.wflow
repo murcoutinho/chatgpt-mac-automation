@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>python3 ~/Documents/Dev/gpt-mac-automation/gpt-from-audio.py | LC_CTYPE=UTF-8 pbcopy</string>
+					<string>python3 {PLACEHOLDER}/gpt-from-audio.py | LC_CTYPE=UTF-8 pbcopy</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -228,7 +228,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>~/Documents/Dev/gpt-mac-automation/play.sh</string>
+					<string>{PLACEHOLDER}/play.sh</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
