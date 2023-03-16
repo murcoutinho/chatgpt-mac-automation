@@ -1,10 +1,12 @@
 # Introduction
 This project contains some python scripts I developed to create my own personal assistant using chatGPT. The python scripts may be used on any operational system. However, the workflows are only useful on macOS.
 
-# Installing dependencies
+# Configuration
 
+### Installing dependencies
 - First, [install homebrew](https://brew.sh/).
 - Install python3, with openai, pyaudio and pynput packages:
+
 ```bash
 brew install python3
 pip3 install openai
@@ -12,7 +14,15 @@ pip3 install pyaudio
 pip3 install pynput
 ```
 
-# Configuring automator workflows
+### Create your OpenAI API-KEY
+[You can create your api-key here](https://platform.openai.com/account/api-keys), by clicking on "create new secret key".
+Note that you need to have [funds](https://platform.openai.com/account/billing/overview) to use the API successfully. 
+
+### Additional configuration
+- Clone this repository and access the folder. Then execute the following commands:
+- `./rename-in-files.sh your-api-key`: replace `your-api-key` by your openai key created in previous section. This command will add your path to automator workflows and you API key to the python clients. 
+
+# Install automator workflows
 For each workflow contained in this project, **double click** on the file and **install** the quick action. The workflows are:
 - `audio-to-gpt.workflow`: With this workflow you can record an audio that will be translated to a chatGPT result.
 - `audio-to-text.workflow`: With this workflow you can record an audio that will be translated into text.

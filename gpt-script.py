@@ -6,7 +6,7 @@ import openai
 
 def main():
     # Load your API key from an environment variable or secret management service
-    openai.api_key = "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"
+    openai.api_key = "{KEYPLACEHOLDER}"
     if len(sys.argv) > 1:
         question = sys.argv[1]
         response = openai.ChatCompletion.create(
@@ -23,5 +23,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
+  
