@@ -10,6 +10,7 @@ This project contains some python scripts I developed to create my own personal 
 ```bash
 brew install python3
 pip3 install openai
+brew install portaudio
 pip3 install pyaudio
 pip3 install pynput
 ```
