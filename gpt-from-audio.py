@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
 import sys
-import os
-import io
 import openai
 import pyaudio
 import wave
@@ -58,8 +56,6 @@ def record_audio(output_filename, channels=1, rate=44100, chunk=1024, format=pya
         wave_file.writeframes(b''.join(frames))
 
 def main():
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
-
     # Load your API key from an environment variable or secret management service
     openai.api_key = "{KEYPLACEHOLDER}"
 
