@@ -58,12 +58,12 @@ These permissions are only required to audio based workflows. If you only plan t
 We have three scripts in this project. If you are using the workflows, the scripts are not necessary. But if you want to use them via command line or other tools, here is some documentation:
 - gpt-script.py: receives a string as input and uses the string to query chatGPT. The answer will be printed on the screen. Example:
 `python3 gpt-script.py "Give me a random cooking recipe!"`
-- gpt-from-audio.py: TODO
+- gpt-from-audio.py: you may execute `python3 gpt-from-audio.py` or `python3 gpt-from-audio.py -gpt` to transform audio to text, or to ask a question to chatGPT, respectivelly. It is important to note that permissions must be set for audio and keyboard access as in section "Setting permissions".
 - there is also a `play.sh` script that rings a bell when called.
 
 # Caution: a common problem to fix
 Depending on the configuration of your machine the python interpreter you are using via shell may be different than the one called by automator. If you have some problems trying to use the tool, you may try the following:
-- Open the dependencies.workflow file (you don't need to install, just open).
+- Open the dependencies.workflow file (you don't need to install, just open the automator app and then open the workflow).
 - Click run. 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/13295110/225403946-6627b2c5-ad7a-4fed-843a-2fa51b47f17e.png">
 Try to use the tool again.
